@@ -34,7 +34,7 @@ struct Bid {
     }
 };
 
-// FIXME (1): Internal structure for tree node
+// Internal structure for tree node
 
 struct Node {
     Bid bid;
@@ -129,7 +129,7 @@ void AVLBinarySearchTree::InOrder() {
  */
 
 void AVLBinarySearchTree::Insert(Bid bid) {
-    // FIXME (2a) Implement inserting a bid into the tree
+    // Implement inserting a bid into the tree
     
 Node* newNode(int key)
 {
@@ -197,12 +197,6 @@ int getBalance(Node *N)
 // Recursive function to insert a key
 // in the subtree rooted with node and
 // returns the new root of the subtree.
-
-
- 
-
-
-
 
 Node* insert(Node* node, int key)
 {
@@ -293,7 +287,7 @@ int main()
  */
 
 void AVLBinarySearchTree::Remove(string bidId) {
-    // FIXME (4a) Implement removing a bid from the tree
+    // Implement removing a bid from the tree
     
     Node* nodePtr = SearchNode(root, bidId);
     if (nodePtr == nullptr) {
@@ -314,7 +308,7 @@ void AVLBinarySearchTree::Remove(string bidId) {
  */
 
 Bid AVLBinarySearchTree::Search(string bidId) {
-    // FIXME (3) Implement searching the tree for a bid
+    // Implement searching the tree for a bid
     
     Node* nodePtr = SearchNode(root, bidId);
     if (nodePtr == nullptr) {
